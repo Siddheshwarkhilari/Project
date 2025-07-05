@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full Gallery - Kaveri Sales and Corporation</title>
+  <link rel="stylesheet" href="gallery.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+ <header class="custom-navbar">
+  <div class="nav-logo">
+    <img src="images/ChatGPT Image Jun 9, 2025, 06_19_30 PM.png" alt="Kaveri Corp Logo">
+    <span>KAVERI GS AUTOMECH</span>
+  </div>
+
+  <nav class="nav-menu">
+    <ul class="nav-list">
+      <li class="dropdown">
+        <a href="../Ganesh/base.html#">Home</a>
+      </li>
+       <li class="dropdown">
+        <a href="../Ganesh/base.html#">Contact Us</a>
+        <ul class="dropdown-menu">
+          <li><a href="contact-form.html">Contact Form</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="../Ganesh/base.html#about">About Us</a>
+        <ul class="dropdown-menu">
+          <li><a href="../docs/company.pdf" target="_blank">Company</a></li>
+          <li><a href="../docs/partners.pdf" target="_blank">Partners</a></li>
+          <li><a href="../Ganesh/docs/company.pdf" target="_blank">Brochure</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="../Ganesh/base.html#products">Products</a>
+        <ul class="dropdown-menu">
+          <li><a href="pumps.html">Pumps</a></li>
+          <li><a href="motors.html">Motors</a></li>
+          <li><a href="engines.html">Engines</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="../Ganesh/base.html#gallery">Gallery</a>
+        <ul class="dropdown-menu">
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="videos.html">Videos</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- =====  GALLERY START  ===== -->
+<main class="gallery-wrapper">
+
+  <!-- Page heading -->
+  <header class="gallery-head">
+    <h1>Our Work in Focus</h1>
+    <p>Explore real‑world installations and product highlights that show our commitment to quality, reliability, and customer success.</p>
+  </header>
+
+  <!-- Responsive grid -->
+  <section class="gallery-grid">
+
+    <!-- Card -->
+    <figure class="gallery-card">
+      <img src="../Ganesh/gallery-images/photo1.jpeg" alt="Industrial Setup">
+      <figcaption>
+        <h3>Industrial Setup&nbsp;1</h3>
+        <p>Assembly line installed in 2024, boosting throughput by 40 %.</p>
+      </figcaption>
+    </figure>
+
+    <!-- Duplicate / replace -->
+    <figure class="gallery-card">
+      <img src="../Ganesh/gallery-images/photo2.jfif" alt="Warehouse Tools">
+      <figcaption>
+        <h3>Warehouse Tools</h3>
+        <p>High‑efficiency storage and picking system.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-card">
+      <img src="../Ganesh/gallery-images/photo3.jfif" alt="Machinery Showcase">
+      <figcaption>
+        <h3>Machinery Showcase</h3>
+        <p>Heavy‑duty drilling solution designed for 24/7 operation.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-card">
+      <img src="../Ganesh/gallery-images/photo4.jfif" alt="Equipment Display">
+      <figcaption>
+        <h3>Equipment Display</h3>
+        <p>Multi‑purpose equipment demo — 2023 Industrial Expo.</p>
+      </figcaption>
+    </figure>
+
+  </section>
+</main>
+
+<!-- Lightbox -->
+<div id="lightbox" class="gallery-lightbox">
+  <span class="lb-close" onclick="closeLB()">&times;</span>
+  <img id="lb-img" class="lb-img" src="" alt="">
+  <span class="lb-prev" onclick="navLB(-1)">&lsaquo;</span>
+  <span class="lb-next" onclick="navLB(1)">&rsaquo;</span>
+</div>
+
+<script>
+  // simple lightbox
+  const imgs = document.querySelectorAll('.gallery-card img');
+  const lb   = document.getElementById('lightbox');
+  const lbImg= document.getElementById('lb-img');
+  let i = 0;
+
+  imgs.forEach((img, idx) => {
+    img.addEventListener('click', () => { i = idx; openLB(); });
+  });
+
+  function openLB() { lb.style.display = 'flex'; lbImg.src = imgs[i].src; }
+  function closeLB() { lb.style.display = 'none'; }
+  function navLB(dir) { i = (i + dir + imgs.length) % imgs.length; lbImg.src = imgs[i].src; }
+</script>
+<!-- =====  GALLERY END  ===== -->
+
+
+  <div class="main-footer">
+    <div class="footer-column company-info">
+      <img src="images/ChatGPT Image Jun 9, 2025, 06_19_30 PM.png" alt="Company Logo">
+      <h2>Kaveri</h2>
+      <p>When your people get up every day wanting to come to work, success happens. We help you to ensure everyone is in the right jobs, well motivated and properly rewarded.</p>
+    </div>
+
+    <div class="footer-column work-links">
+      <h3>CUSTOMERS</h3> 
+      <ul>
+        <li><a href="#">TETRA PAK</a></li>
+        <li><a href="#">TATA MOTORS</a></li>
+        <li><a href="#">ASHOK LEYLAND</a></li>
+        <li><a href="#">MAHINDRA DEFENCE</a></li>
+        <li><a href="#">HINDALCO INDUSTRIES</a></li>
+        <li><a href="#">SKODA</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column callback-form">
+      <h3>Request a Call Back</h3>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="tel" placeholder="Phone" required>
+        <select required>
+          <option selected>Finance & Restructuring</option>
+          <option>Consulting</option>
+          <option>Legal</option>
+        </select>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="partner-logos">
+  <img src="new-images/partner1.svg" alt="Partner Logo 1">
+  <img src="new-images/skoda.png" alt="Partner Logo 2">
+  <img src="new-images/tata.jfif" alt="Partner Logo 3">
+  <img src="new-images/hindalco.jfif" alt="Partner Logo 4">
+  <img src="new-images/ashok.png" alt="Partner Logo 4">
+  </div>
+
+
+  </div>
+</footer>
+</body>
+</html>

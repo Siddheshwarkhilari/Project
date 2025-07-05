@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submersible Pump</title>
+  <link rel="stylesheet" href="../CSS/clamps.css">
+</head>
+
+<body>
+  <!-- ===== Kaveri Global Navbar ===== -->
+<header class="custom-navbar">
+  <div class="nav-logo">
+    <img src="../../images/ChatGPT Image Jun 9, 2025, 06_19_30 PM.png" alt="Kaveri Corp Logo">
+    <span>KAVERI GS AUTOMECH</span>
+  </div>
+
+    <nav class="nav-menu">
+    <ul class="nav-list">
+      <li class="dropdown">
+        <a href="../../base.html#home">Home</a>
+      </li>
+
+      <li class="dropdown">
+        <a href="../../base.html#home">Contact Us</a>
+        <ul class="dropdown-menu">
+          <li><a href="contact-form.html">Contact Form</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="../../base.html#about">About Us</a>
+        <ul class="dropdown-menu">
+          <li><a href="../docs/company.pdf" target="_blank">Company</a></li>
+          <li><a href="../docs/partners.pdf" target="_blank">Partners</a></li>
+          <li><a href="../Ganesh/docs/company.pdf" target="_blank">Brochure</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="../../base.html#products">Products</a>
+        <ul class="dropdown-menu">
+          <li><a href="pumps.html">Pumps</a></li>
+          <li><a href="motors.html">Motors</a></li>
+          <li><a href="engines.html">Engines</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="../../base.html#gallery">Gallery</a>
+        <ul class="dropdown-menu">
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="videos.html">Videos</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+<!-- ===== /Kaveri Global Navbar ===== -->
+
+<main class="product-details">
+
+  <h1 class="product-title">Submersible Pump</h1>
+
+  <!-- 1) IMAGE UPLOAD AREA (two equal blocks) -->
+  <!-- === IMAGE VIEWER SECTION (with modal and zoom) === -->
+<section class="image-viewer">
+  <div class="image-box" onclick="openModal('img1')">
+    <img src="../../new-images/products-img/clamps.jpg" id="img1" alt="Image 1">
+  </div>
+  <div class="image-box" onclick="openModal('img2')">
+    <img src="../../new-images/products-img/clamps-diagram.jpg" id="img2" alt="Image 2">
+  </div>
+</section>
+
+<!-- === MODAL for expanded + zoomed view === -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <button class="zoom-btn" onclick="zoomImage()">Zoom In</button>
+</div>
+
+
+  <!-- 2) VARIANT TABLE -->
+  <h2 class="section-heading">Choose Your Variant</h2>
+  <div class="table-wrapper">
+    <table class="variant-table">
+      <thead>
+        <tr>
+          <th>CAD</th><th>Description</th><th>d2 (mm)</th><th>D (mm)</th><th>L (mm)</th>
+          <th>l* (mm)</th><th>l1 (mm)</th><th>l2 (mm)</th><th>s (mm)</th><th>g [kg]</th><th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#">3-D CAD</a></td><td>Submersible Pump</td>
+          <td><select><option>20</option><option>25</option><option>32</option></select></td>
+          <td><select><option>80</option><option>90</option><option>100</option></select></td>
+          <td><select><option>300</option><option>350</option><option>400</option></select></td>
+          <td><select><option>50</option><option>60</option><option>70</option></select></td>
+          <td><select><option>45</option><option>55</option><option>65</option></select></td>
+          <td><select><option>55</option><option>65</option><option>75</option></select></td>
+          <td><select><option>10</option><option>12</option><option>14</option></select></td>
+          <td><select><option>4.2</option><option>5.3</option><option>6.1</option></select></td>
+          <td><button class="btn-primary">Add to Enquiry</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 3) TECHNICAL SPECIFICATION (two-column) -->
+  <h2 class="section-heading">Technical Specifications</h2>
+  <table class="spec-table">
+    <tbody>
+      <tr><th>Type</th>           <td>Vertical Submersible Centrifugal Pump</td></tr>
+      <tr><th>Power Range</th>    <td>0.5 HP – 100 HP</td></tr>
+      <tr><th>Material</th>       <td>Stainless Steel / Cast Iron</td></tr>
+      <tr><th>Typical Uses</th>   <td>Agriculture, Domestic, Industrial</td></tr>
+      <tr><th>Max Flow Rate</th>  <td>400 LPM</td></tr>
+      <tr><th>Head Range</th>     <td>10 – 300 m</td></tr>
+    </tbody>
+  </table>
+
+<!-- ===== ASK THE EXPERT ================================= -->
+<section class="ask-expert">
+  <h2>ASK THE EXPERT</h2>
+
+  <form class="ask-form" onsubmit="return false">
+    <!-- message box -->
+    <div class="msg-wrapper">
+      <span class="icon-pencil"></span>
+      <textarea
+        placeholder="Hello, I contact you about the product Submersible Pump (Code SP-XXX)…"
+        required></textarea>
+    </div>
+
+    <!-- country + recaptcha note + request button in a single row -->
+    <div class="form-row">
+      <select required>
+        <option value="" disabled selected>Choose country</option>
+        <option>United States</option>
+        <option>India</option>
+        <option>Italy</option>
+        <!-- … -->
+      </select>
+
+      <div class="recaptcha-note">
+        This site is protected by reCAPTCHA Enterprise and
+        Google <a href="#">Privacy Policy</a> and
+        <a href="#">Terms of Service</a> apply.
+      </div>
+
+      <button type="submit" class="ask-btn">REQUEST</button>
+    </div>
+
+    <!-- email -->
+    <input type="email" placeholder="*Email" required>
+
+    <!-- privacy consent -->
+    <label class="consent">
+      <input type="checkbox" required>
+      I consent to the processing of my personal data in accordance with the
+      <a href="#">Privacy Policy</a>
+    </label>
+  </form>
+</section>
+<!-- ===== /ASK THE EXPERT =============================== -->
+
+ 
+
+  <!-- ===== Kaveri Global Footer ===== -->
+<footer class="footer-container">
+  <div class="newsletter-section">
+    <div class="newsletter-content">
+      <!-- (optional text or icon here) -->
+    </div>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Your e-mail address" required>
+      <button type="submit">Sign me up!</button>
+    </form>
+  </div>
+
+  <div class="main-footer">
+    <!-- Company info -->
+    <div class="footer-column company-info">
+      <img src="../../images/ChatGPT Image Jun 9, 2025, 06_19_30 PM.png" alt="Company Logo">
+      <h2>Kaveri</h2>
+      <p>When your people get up every day wanting to come to work, success happens. We help you to ensure everyone is in the right jobs, well motivated and properly rewarded.</p>
+    </div>
+
+    <!-- Customers column -->
+    <div class="footer-column work-links">
+      <h3>CUSTOMERS</h3> 
+      <ul>
+        <li><a href="#">TETRA PAK</a></li>
+        <li><a href="#">TATA MOTORS</a></li>
+        <li><a href="#">ASHOK LEYLAND</a></li>
+        <li><a href="#">MAHINDRA DEFENCE</a></li>
+        <li><a href="#">HINDALCO INDUSTRIES</a></li>
+        <li><a href="#">SKODA</a></li>
+      </ul>
+    </div>
+
+    <!-- Callback form -->
+    <div class="footer-column callback-form">
+      <h3>Request a Call Back</h3>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="tel" placeholder="Phone" required>
+        <select required>
+          <option selected>Finance &amp; Restructuring</option>
+          <option>Consulting</option>
+          <option>Legal</option>
+        </select>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Partner logos -->
+  <div class="partner-logos">
+    <img src="../../new-images/partner1.svg"  alt="Partner Logo 1">
+    <img src="../../new-images/skoda.png"     alt="Partner Logo 2">
+    <img src="../../new-images/tata.jfif"     alt="Partner Logo 3">
+    <img src="../../new-images/hindalco.jfif" alt="Partner Logo 4">
+    <img src="../../new-images/ashok.png"     alt="Partner Logo 5">
+  </div>
+</footer>
+<!-- ===== /Kaveri Global Footer ===== -->
+
+
+  <!-- OPTIONAL: simple script to live-generate product code -->
+  <script>
+    const dim = document.getElementById('dimension');
+    const len = document.getElementById('length');
+    const code = document.getElementById('product-code');
+
+    function updateCode() {
+      code.textContent = `SP-${dim.value}-${len.value}`;
+    }
+    dim.addEventListener('change', updateCode);
+    len.addEventListener('change', updateCode);
+  </script>
+
+  <script>
+let zoomed = false;
+function openModal(imgId) {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  modal.style.display = "flex";
+  modalImg.src = document.getElementById(imgId).src;
+  modalImg.style.transform = "scale(1)";
+  zoomed = false;
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+
+function zoomImage() {
+  const modalImg = document.getElementById("modalImage");
+  if (!zoomed) {
+    modalImg.style.transform = "scale(2.5)";
+    zoomed = true;
+  } else {
+    modalImg.style.transform = "scale(1)";
+    zoomed = false;
+  }
+}
+</script>
+
+</body>
+</html>
