@@ -103,9 +103,9 @@
     <!-- Right Column: Text Content -->
     <div class="about-text">
       <h1>What We Are!</h1>
-      <p>Kaveri Sales and Corporation is committed to providing top-quality industrial components and machinery tools. Our range includes reliable products that ensure performance, longevity, and innovation — making us a trusted partner in the mechanical and electrical sectors.</p>
-      <p>With over a decade of experience, we bring best-in-class services to our customers through integrity, technical excellence, and a customer-first approach.</p>
-      <p>Our partnerships with industry leaders allow us to deliver innovation, precision, and affordability to sectors ranging from agriculture to manufacturing.</p>
+      <p><strong>Kaveri GS AutoMech</strong> is an ISO 9001:2015 certified precision machining company based in Chakan, Pune, delivering customised components for Automotive, Manufacturing, Food Industry and Defence Sector.</p>
+      <p>With over 8 years of experience, we are known for reliability, techincal accuracy and on-time execution.</p>
+      <p>Delivering precision components to some of the most respected names in the industries haved helped us innovate, evolve and reach new heights.</p>
     </div>
 
   </div>
@@ -175,37 +175,72 @@
     </a>
 
   </div>
-  <a href="products.html" class="explore-btn">Explore More</a>
+  <!--  Fancy “Explore More” button  -->
+  <a href="products.html" class="explore-btn-products">Explore More</a>
+
 </section>
 
 <section id="gallery" class="section fade-in">
-  <div class="gallery-text">
-      <p>INNOVATION IN EVERY FRAME</p>
-  </div>
+
+  <!-- Headline + intro -->
+  <div class="gallery-text"><p>INNOVATION IN EVERY FRAME</p></div>
   <div class="gallery-subtext">
-      <p>Take a closer look at our work in action. This gallery showcases real installations, close-up product views, and the environments where our solutions create impact. From shop floors to field sites, each image reflects our commitment to quality, reliability, and customer satisfaction. It's not just about what we make — it's about how it performs in your world.</p>
+    <p>Take a closer look at our work in action. This gallery showcases real installations, close‑up product views,
+       and the environments where our solutions create impact.</p>
   </div>
-  <div class="gallery-grid">
-    <div class="gallery-item">
-      <img src="gallery-images/gallery1.jpg" alt="Project 1">
-      <div class="caption">Industrial Setup 1</div>
-    </div>
-    <div class="gallery-item">
-      <img src="images/slide11.jpeg" alt="Project 2">
-      <div class="caption">Warehouse Tools</div>
-    </div>
-    <div class="gallery-item">
-      <img src="images/slide2.avif" alt="Project 3">
-      <div class="caption">Machinery Showcase</div>
-    </div>
-    <div class="gallery-item">
-      <img src="images/slide3.jpeg" alt="Project 4">
-      <div class="caption">Equipment Display</div>
-    </div>
+
+  <!--  Auto‑scrolling carousel  -->
+  <div id="galleryCarousel" class="carousel slide carousel-fade gallery-carousel"
+       data-bs-ride="carousel" data-bs-interval="3000">
+
+    <div class="carousel-inner">
+
+  <!-- Slide 1 – ACTIVE -->
+  <div class="carousel-item active">
+    <video class="d-block w-100" autoplay muted loop playsinline>
+      <source src="videos/Tropical.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
+
+  <!-- Slide 2 -->
+  <div class="carousel-item">
+    <video class="d-block w-100" autoplay muted loop playsinline>
+      <source src="videos/forest.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="carousel-item">
+    <video class="d-block w-100" autoplay muted loop playsinline>
+      <source src="videos/Agua-natural.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="carousel-item">
+    <video class="d-block w-100" autoplay muted loop playsinline>
+      <source src="videos/slide4.mp4" type="video/mp4">
+    </video>
+  </div>
+
+</div>
+
+
+    <!-- Prev / next arrows (optional) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!--  Explore‑More button stays the same  -->
   <div class="explore-container">
-    <a href="gallery.html" class="explore-btn">Explore More</a>
+    <a href="gallery.html" class="explore-btn-gallery">Explore More</a>
   </div>
+
 </section>
 
 
